@@ -1,0 +1,45 @@
+.banner {
+    height: 550px;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #001f3fe8 5%, rgba(255, 255, 255, 0) 90%) , url(/public/banner.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.coisinha {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.15);
+    margin-bottom: 24px;
+}
+
+.titulo {
+    color: white;
+    font-size: 56px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+
+.subtitulo {
+    max-width: 420px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.degradeTexto {
+    background-image: linear-gradient(to right, white, #b6b5b5);
+    background-clip: text;
+    color: transparent;
+}
+
