@@ -23,7 +23,7 @@
 
 .titulo {
     color: white;
-    font-size: 56px;
+    font-size: 70px;
     line-height: 1.1;
     font-weight: 700;
     margin-bottom: 24px;
@@ -43,3 +43,10 @@
     color: transparent;
 }
 
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 40px;
+    }
+
+
+}

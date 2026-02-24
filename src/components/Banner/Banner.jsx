@@ -1,4 +1,5 @@
 import css from "./Banner.module.css";
+import Botao from "../Botao/Botao.jsx";
 
 export default function Banner() {
     return (
@@ -14,6 +15,9 @@ export default function Banner() {
                     Mergulhe em histórias que transformam. Explore nossa seleção
                     premium de obras clássicas e contemporâneas.
                 </p>
+
+                <Botao />
+                <Botao />
             </div>
         </section>
     );
