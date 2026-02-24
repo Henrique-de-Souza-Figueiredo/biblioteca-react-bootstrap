@@ -1,0 +1,21 @@
+import css from "./bookCartao.module.css"
+import Botao from "../Botao/Botao.jsx";
+
+export default function BookCartao({titulo, autor, tipo, imagem}) {
+    return (
+        <div className={'' + css.card}>
+            <div className={'rounded-3 ' + css.divImagem}>
+                <img src={imagem} className={'rounded-3 shadow ' + css.imagem} alt={'Imagem do livro: ' + titulo}/>
+                <div id={'botaoSobreposto'}
+                     className={'d-flex justify-content-center align-items-center rounded-3 ' + css.botaoSobreposto}>
+                    <Botao conteudo={'VER DETALHES'} tipo={'card'}/></div>
+                <div id={'fundoSobreposto'} className={'rounded-3 ' + css.fundoSobreposto}></div>
+            </div>
+            <div className={''}>
+                <span className={css.categoriaTexto}>{tipo}</span>
+                <h5 className={'card-title ' + css.tituloTexto}>{titulo}</h5>
+                <p className={css.autorTexto}>{autor}</p>
+            </div>
+        </div>
+    )
+}

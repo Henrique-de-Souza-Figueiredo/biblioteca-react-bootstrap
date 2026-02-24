@@ -1,0 +1,29 @@
+.tracinho{
+    background-color: #042143;
+    width: 40px;
+    height: 3px;
+}
+
+.novidades {
+    letter-spacing: 2px;
+    font-family: "Inter", sans-serif;
+    color: #999999;
+    padding-left: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-decoration: inherit;
+    font-size: 13px;
+
+}
+
+.semana {
+    color: #042143;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+
+
+}

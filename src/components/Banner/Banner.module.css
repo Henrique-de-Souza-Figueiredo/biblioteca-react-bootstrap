@@ -43,9 +43,19 @@
     color: transparent;
 }
 
+.botoes {
+    display: flex;
+
+}
+
+
 @media (max-width: 768px) {
     .titulo {
         font-size: 40px;
+    }
+
+    .botoes {
+        display: block;
     }
 
 

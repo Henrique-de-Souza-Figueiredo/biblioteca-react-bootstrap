@@ -1,5 +1,7 @@
 import css from "./Banner.module.css";
 import Botao from "../Botao/Botao.jsx";
+import Botao2 from "../Botao/Botao2.jsx";
+
 
 export default function Banner() {
     return (
@@ -15,9 +17,11 @@ export default function Banner() {
                     Mergulhe em histórias que transformam. Explore nossa seleção
                     premium de obras clássicas e contemporâneas.
                 </p>
+                <div className={css.botoes}>
+                    <Botao conteudo={"EXPLORAR CATALOGO"} />
+                    <Botao2 />
+                </div>
 
-                <Botao />
-                <Botao />
             </div>
         </section>
     );
