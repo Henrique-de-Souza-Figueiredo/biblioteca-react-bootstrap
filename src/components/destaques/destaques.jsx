@@ -1,6 +1,6 @@
 import css from "./destaques.module.css"
 
-export default function Destaques() {
+export default function Destaques({titulo}) {
     return (
         <div className={"container mt-5"}>
             <div className={"row"}>
@@ -10,13 +10,36 @@ export default function Destaques() {
                 </div>
                 <div className={"container d-md-flex justify-content-between align-items-center mb-2 "}>
                     <div>
-                        <h1 className={css.semana}>Destaques da Semana</h1>
+                        <h1 className={css.semana}>{titulo}</h1>
+                    </div>
+                    <div className="mb-3">
+                        <input
+                            type="search"
+                            className="form-control"
+                            placeholder="Buscar..."
+                        />
                     </div>
                     <div>
+
                         <select className={'p-2 rounded-5'}>
-                            <option>Ordenar pro: Relevância</option>
-                            <option>Mais recentes</option>
-                            <option>Menor preço</option>
+                            <option>Autor</option>
+                            <option>Machado de Assis</option>
+                            <option>Igor Carcerez</option>
+                            <option>Clarice Lispector</option>
+                            <option>Monteiro Lobato</option>
+
+                        </select>
+                    </div>
+
+                    <div>
+
+                        <select className={'p-2 rounded-5'}>
+                            <option>Categorias</option>
+                            <option>Terror</option>
+                            <option>Comédia</option>
+                            <option>Romançe</option>
+                            <option>Aventura</option>
+
                         </select>
                     </div>
                 </div>

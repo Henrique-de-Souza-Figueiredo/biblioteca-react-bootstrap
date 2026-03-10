@@ -38,6 +38,15 @@
     transform: translateY(-3px);
 }
 
+.containerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem; /* equivalente ao mb-3 */
+}
+
+
+
 @media (max-width: 768px) {
     .botao, .botao2 {
 

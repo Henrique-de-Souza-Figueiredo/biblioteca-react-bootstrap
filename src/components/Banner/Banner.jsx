@@ -18,7 +18,7 @@ export default function Banner() {
                     premium de obras clássicas e contemporâneas.
                 </p>
                 <div className={css.botoes}>
-                    <Botao conteudo={"EXPLORAR CATALOGO"} />
+                    <Botao link="/cadastro" usarCss={false} conteudo={"EXPLORAR CATALOGO"} />
                     <Botao2 />
                 </div>
 

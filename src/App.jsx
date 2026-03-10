@@ -1,20 +1,21 @@
-import Header from "./components/Header/Header.jsx";
-import Banner from "./components/Banner/Banner.jsx";
-import Botao from "./components/Botao/Botao.jsx";
-import Destaques from "./components/destaques/destaques.jsx";
-import GridLivro from "./components/gridLivro/gridLivro.jsx";
-import Footer from "./components/Footer/Footer.jsx";
+import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import Login from "./pages/Login.jsx";
+import Cadastro from "./pages/Cadastro.jsx";
+import Catalogo from "./pages/Catalogo.jsx";
+import Detalhes from "./pages/Detalhes.jsx";
 
 export default function App() {
     return (
-        <>
-            <Header />
-            <Banner />
-            <Destaques />
-            <GridLivro />
-            <Footer />
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/cadastro" element={<Cadastro />} />
+                <Route path="/catalogo" element={<Catalogo />} />
+                <Route path="/detalhes" element={<Detalhes />} />
 
-
-        </>
+            </Routes>
+        </BrowserRouter>
     )
 }

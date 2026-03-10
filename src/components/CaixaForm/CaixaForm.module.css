@@ -1,0 +1,27 @@
+
+.form-bg {
+    background-color: #042143;
+}
+
+
+.form-card {
+    width: 420px;
+    border-radius: 12px;
+    border: none;
+}
+
+
+.form-title {
+    color: #063973;
+    font-weight: 600;
+}
+
+
+.form-content {
+    min-height: 120px;
+}
+
+.corbtn{
+    background-color: #042143;
+    color: white;
+}

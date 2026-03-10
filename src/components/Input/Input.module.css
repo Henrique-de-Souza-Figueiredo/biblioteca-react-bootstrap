@@ -1,0 +1,20 @@
+.inputGroup{
+    width: 100%;
+}
+
+.label{
+    color: #042143;
+    font-weight: 500;
+}
+
+.input{
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.2s;
+}
+
+.input:focus{
+    border-color: #042143;
+    box-shadow: 0 0 0 0.15rem rgba(4, 33, 67, 0.25);
+}
+
