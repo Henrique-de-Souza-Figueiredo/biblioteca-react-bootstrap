@@ -9,12 +9,13 @@ import {useState} from "react";
 
 export default function Home() {
     const [inp,setInp] = useState("");
+    const [select, setSelect] = useState("");
     return (
         <>
             <Header />
             <Banner />
-            <Destaques inp={inp} setInp={setInp} />
-            <GridLivro rotacatalogo="/cadastro" inp={inp} setInp={setInp} />
+            <Destaques select={select} setSelect={setSelect} inp={inp} setInp={setInp} />
+            <GridLivro rotacatalogo="/cadastro" select={select} setSelect={setSelect} inp={inp} setInp={setInp} />
             <Botao conteudo={"Ver Catálogo Completo"} />
             <Footer />
 

@@ -23,24 +23,14 @@ export default function Destaques({titulo, inp, setInp}) {
                     </div>
                     <div>
 
-                        <select className={'p-2 rounded-5'}>
-                            <option>Autor</option>
-                            <option>Machado de Assis</option>
-                            <option>Igor Carcerez</option>
-                            <option>Clarice Lispector</option>
-                            <option>Monteiro Lobato</option>
-
-                        </select>
                     </div>
 
                     <div>
 
                         <select className={'p-2 rounded-5'}>
-                            <option>Categorias</option>
-                            <option>Terror</option>
-                            <option>Comédia</option>
-                            <option>Romançe</option>
-                            <option>Aventura</option>
+                            <option>Ordenar por: Relevancia</option>
+                            <option>Mais Recentes</option>
+                            <option>Menor Preço</option>
 
                         </select>
                     </div>
