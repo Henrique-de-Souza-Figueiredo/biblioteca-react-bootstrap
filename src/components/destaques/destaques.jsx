@@ -1,6 +1,7 @@
 import css from "./destaques.module.css"
 
-export default function Destaques({titulo}) {
+export default function Destaques({titulo, inp, setInp}) {
+
     return (
         <div className={"container mt-5"}>
             <div className={"row"}>
@@ -17,6 +18,7 @@ export default function Destaques({titulo}) {
                             type="search"
                             className="form-control"
                             placeholder="Buscar..."
+                            value={inp} onChange={(e) =>setInp(e.target.value)}
                         />
                     </div>
                     <div>
