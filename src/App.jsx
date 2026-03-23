@@ -4,6 +4,8 @@ import Login from "./pages/Login.jsx";
 import Cadastro from "./pages/Cadastro.jsx";
 import Catalogo from "./pages/Catalogo.jsx";
 import Detalhes from "./pages/Detalhes.jsx";
+import CadastroLivro from "./pages/CadastroLivro.jsx";
+
 
 export default function App() {
     return (
@@ -13,7 +15,9 @@ export default function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/cadastro" element={<Cadastro />} />
                 <Route path="/catalogo" element={<Catalogo />} />
-                <Route path="/detalhes" element={<Detalhes />} />
+                <Route path="/detalhes/:id" element={<Detalhes />} />
+                <Route path="/cadastroLivro" element={<CadastroLivro />} />
+
 
             </Routes>
         </BrowserRouter>

@@ -39,7 +39,13 @@ export default function GridLivro({rotacatalogo, inp, setInp}) {
             <div className={"row"}>
                 {livros.map((livro, index) => (
                     <div className='col-md-3 col-12' key={index}>
-                        <BookLivro rota={rotacatalogo} titulo={livro.titulo} autor={livro.autor} tipo={livro.tipo} imagem={livro.imagem} />
+                        <BookLivro
+                            rota={`${rotacatalogo}/${livro.id}`}
+                            titulo={livro.titulo}
+                            autor={livro.autor}
+                            tipo={livro.tipo}
+                            imagem={livro.imagem}
+                        />
                     </div>
                 ))}
             </div>

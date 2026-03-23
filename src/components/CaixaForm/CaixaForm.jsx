@@ -1,7 +1,7 @@
 import css from "./CaixaForm.module.css"
-import {Link} from "react-router-dom";
 
-export default function CaixaForm({ acao, titulo, children }) {
+
+export default function CaixaForm({ titulo, children }) {
     return (
         <div className={`container-fluid ${css.formBg} d-flex justify-content-center align-items-center vh-100`}>
 
@@ -13,12 +13,6 @@ export default function CaixaForm({ acao, titulo, children }) {
 
                 <div className={css.formContent}>
                     {children}
-                </div>
-
-                <div className="d-flex justify-content-end mt-3">
-                    <Link to="/catalogo" className={`btn ${css.corbtn}`}>
-                        {acao}
-                    </Link>
                 </div>
 
             </div>

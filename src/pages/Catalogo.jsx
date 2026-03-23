@@ -13,9 +13,9 @@ export default function Catalogo() {
         <>
 
             <Header />
+            <Botao link="/cadastroLivro" conteudo="Adicionar Livro"/>
             <Destaques titulo={"Catalogo"} inp={inp} setInp={setInp} />
-            <GridLivro rotacatalogo="/detalhes " inp={inp} setInp={setInp} />
-            <Botao usarCss={true} conteudo={"Ver Mais"} />
+            <GridLivro rotacatalogo="/detalhes" inp={inp} setInp={setInp} />
             <Footer />
         </>
     )

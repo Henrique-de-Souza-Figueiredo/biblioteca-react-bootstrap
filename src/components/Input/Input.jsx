@@ -1,6 +1,6 @@
 import css from "./Input.module.css"
 
-export default function Input({ label, type="text", placeholder }) {
+export default function Input({ label, type="text", placeholder, value, onChange }) {
     return (
         <div className={`mb-3 ${css.inputGroup}`}>
 
@@ -11,6 +11,8 @@ export default function Input({ label, type="text", placeholder }) {
             <input
                 type={type}
                 placeholder={placeholder}
+                value={value}
+                onChange={onChange}
                 className={`form-control ${css.input}`}
             />
 
